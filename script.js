@@ -1,3 +1,8 @@
+
+
+
+
+
 function locomotive() {
   gsap.registerPlugin(ScrollTrigger);
 
@@ -441,3 +446,30 @@ gsap.to("#page3", {
         scroller: '#main'
     }
 })
+
+// gsap.to("#page4", {
+//   scrollTrigger: {
+//     trigger: "#page4",
+//     start: "top top",
+//     end: "bottom top",
+//     pin: true, // Pin the element
+//     pinSpacing: false, // To prevent the overlapping section from pushing the content down
+//     scroller: "#main",
+//     markers: true, // Use markers to visualize the trigger area (for debugging)
+//   },
+// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
