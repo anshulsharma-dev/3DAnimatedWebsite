@@ -50,32 +50,31 @@ html, body {
     outline: none;
     overflow: hidden;
     position: relative;
-    color: #fff;
     font-weight: 530;
-    font-size: 1.2rem;
+    font-size: 1rem;
     border-radius: 0.7rem;
-    background-color: #131313;
     padding: 20px 25px;
     margin-left: 45px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.20);  
-    color: #000;  
    
 }
 .btn {
+    color: white;
     background-color: #111;
     padding: 20px 25px;
     margin-left: 45px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
 
-    transition:  0.3s ease-in-out;
-    background: linear-gradient(135deg, transparent 50%, rgb(102, 119, 153) 50%);
+    transition:  0.5s ease-in-out;
+    background: linear-gradient(135deg, black 50%, rgb(102, 119, 153) 50%);
     background-size: 200% 100%;
     background-position: bottom left;
 }
 
 /* Define the hover effect */
 .btn:hover {
-    background-position: top right;
+    background-position: top right ;
+    background-size: 300% 200%;
 }
 
 
@@ -139,7 +138,7 @@ canvas {
 
 #loop h1 {
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 530;
     animation-name: anim;
     animation-duration: 100s;
     animation-timing-function: linear;
@@ -150,7 +149,7 @@ canvas {
 #loop>h1>span {
     -webkit-text-stroke: 1.5px #000;
     color: transparent;
-    font-weight: 550;  
+    font-weight: 530;  
 }
 @keyframes anim {
     0%{
@@ -545,26 +544,29 @@ canvas {
     margin-bottom: 0.6rem ;
 }
 #d-name h3 {
+    margin-top: 0.8vw;
     text-transform: uppercase;
     font-weight: 550;
     font-size: 1.6vw;
-    letter-spacing: 2px;
+    letter-spacing: 2.5px;
 }
 #d-name #p1 {
     font-size: 5px;
     line-height: 2;
-    margin-bottom: 2px;
+    margin-bottom: 2.8px;
 }
 #d-name #p2 {
     opacity: 0.8;
     font-size: 1px;
    margin-bottom: 1px;
+   
 }
 
 #page7 {
+    /* border: 1px solid yellow; */
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
     position: relative;
     /* justify-content: center; */
@@ -572,13 +574,17 @@ canvas {
     background: linear-gradient(70deg, #000,  #2f2f2f52);
 }
 .center-line {
-    margin: 5rem 0;
+    margin-top: 3rem;
+    margin-bottom: 5rem ;
     height: 10rem;
     width: 1px;
     background: rgba(255, 255, 255, 0.5);
 }
 #page7 #p7-up {
     font-size: 1px;
+}
+#p7-goals {
+    margin: 0.5vw;
 }
 #page7 h2 {
     font-size: 4vw;
@@ -591,7 +597,7 @@ canvas {
    padding: 8px;
     font-size: 12px;
     width: 50%;
-    height: 25%;
+    height: max-content;
     line-height: 1.2vw;
     font-weight: 500;
 }
@@ -608,7 +614,7 @@ canvas {
 #footer {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-items: center;
     height: 92vh;
     width: 100vw;
@@ -649,7 +655,7 @@ canvas {
 }
 #last-con span {
     font-style: italic;
-    font-size: 12rem;
+    font-size: 22vh;
     font-weight: 800;
     color: transparent;
     -webkit-text-stroke: 0.7px #fff;
